@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-PRAC - Guitar Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Get Started Page -->
+    <section id="start-page">
+        <h1>Welcome to G-PRAC</h1>
+        <button id="start-btn">Get Started</button>
+    </section>
+
+    <!-- Chord Selection Page -->
+    <section id="chord-page" style="display:none;">
+        <h2>Select Chords</h2>
+        <select id="chords" multiple>
+            <option value="C">C</option>
+            <option value="G">G</option>
+            <option value="D">D</option>
+            <option value="Am">Am</option>
+            <option value="Em">Em</option>
+            <!-- Add more chords as needed -->
+        </select>
+        <button id="chord-next-btn">Next</button>
+    </section>
+
+    <!-- Filter Page -->
+    <section id="filter-page" style="display:none;">
+        <h2>Select Filters</h2>
+        <label for="genre">Genre:</label>
+        <select id="genre">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="jazz">Jazz</option>
+            <!-- Add more genres as needed -->
+        </select>
+
+        <label for="level">Level:</label>
+        <select id="level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <!-- Add more levels as needed -->
+        </select>
+
+        <label for="skills">Skills:</label>
+        <select id="skills">
+            <option value="strumming">Strumming</option>
+            <option value="fingerpicking">Fingerpicking</option>
+            <!-- Add more skills as needed -->
+        </select>
+
+        <button id="filter-next-btn">Show Songs</button>
+    </section>
+
+    <!-- Song Results Page -->
+    <section id="results-page" style="display:none;">
+        <h2>Song Suggestions</h2>
+        <ul id="song-list"></ul>
+        <button id="start-over-btn">Start Over</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
